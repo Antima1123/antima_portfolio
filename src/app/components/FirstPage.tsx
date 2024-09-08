@@ -4,12 +4,12 @@ import Image from "next/image"
 
 const FirstPage = () => {
     const Hello = `Hello`;
-    const A = `A`
-    const S = `S`
-    const create = `Creative`
-    const india = `India`
-    const I = `I'm`
-    const social = `Social`
+    const A = `A`;
+    const S = `S`;
+    const create = `Creative`;
+    const india = `India`;
+    const I = `I'm`;
+    const social = `Social`;
     return (
         <div 
         className="-mt-[4rem] h-full"
