@@ -3,6 +3,13 @@
 import Image from "next/image"
 
 const FirstPage = () => {
+    const Hello = `Hello`;
+    const A = `A`
+    const S = `S`
+    const create = `Creative`
+    const india = `India`
+    const I = `I'm`
+    const social = `Social`
     return (
         <div 
         className="-mt-[4rem] h-full"
@@ -17,25 +24,25 @@ const FirstPage = () => {
 
                 
                 <div className="flex flex-col md:gap-4  gap-2 w-full pt-20  items-center md:items-start">
-                    <div className="text-[24px]  text-[#f75023]">Hello, I'm</div>
+                    <div className="text-[24px]  text-[#f75023]">{Hello}, I'm</div>
                     <div className="md:text-[45px]  text-[35px]  flex gap-3">
                         <div className="flex">
-                            <p className=" md:text-[62px]  text-[45px] md:-mt-5  -mt-3">A</p>ntima 
+                            <p className=" md:text-[62px]  text-[45px] md:-mt-5  -mt-3">{A}</p>ntima 
                         </div>
                         <div className="flex">
-                            <p className=" md:text-[62px]  text-[45px] md:-mt-5  -mt-3"> S</p>ingh
+                            <p className=" md:text-[62px]  text-[45px] md:-mt-5  -mt-3">{S}</p>ingh
                         </div>
                     </div>
                     <div className="lg:text-[20px] text-[18px] items-center gap-2 flex  text-white">
                         <p >A</p>
-                        <p className="text-[#1cbe59]">Creative Web Developer</p>
+                        <p className="text-[#1cbe59]">{create} Web Developer</p>
                         <p>From</p>
-                        <p className="text-[#8067f0]">India</p>
+                        <p className="text-[#8067f0]">{india}</p>
                     </div>
-                    <div className="text-[16px] w-[70%] sm:w-[46%] md:w-full ">I'm creative web developer using nextjs, and I'm very passionate and dedicated to my work.</div>
+                    <div className="text-[16px] w-[70%] sm:w-[46%] md:w-full ">{I} creative web developer using nextjs, and I'm very passionate and dedicated to my work.</div>
                     <div className="flex pt-2 gap-5 w-full md:justify-start  justify-center items-center">
                         <button className="w-[9rem]  rounded-3xl p-3 bg-[#f75023] hover:bg-transparent border-2 border-red-500 transition-all duration-500">About Me</button>
-                        <div>Social llinks</div>
+                        <div>{social} links</div>
                     </div>
                 </div>
                 <div className=" pt-20 w-full items-center md:flex flex-col justify-center relative  hidden">
