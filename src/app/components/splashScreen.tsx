@@ -15,8 +15,8 @@ const SplashScreen: React.FC= () => {
         </motion.div>
 
         {/* the grow covers */}
-        <motion.div className="w-[1px] h-1/2 bg-white absolute" animate={{y: [0,-200,-600]}} transition={{ ease: "easeOut", duration: 1 }}></motion.div>
-        <motion.div className="w-[1px] h-1/2 bg-white absolute bottom-0" animate={{y: [0,200,600]}} transition={{ ease: "easeOut", duration: 1 }}></motion.div>
+        <motion.div className="w-[1px] h-1/2 bg-white absolute z-[100]" animate={{y: [0,-200,-600]}} transition={{ ease: "easeOut", duration: 1 }}></motion.div>
+        <motion.div className="w-[1px] h-1/2 bg-white absolute bottom-0 z-[100]" animate={{y: [0,200,600]}} transition={{ ease: "easeOut", duration: 1 }}></motion.div>
 
 
         {/* screen right side slider */}
