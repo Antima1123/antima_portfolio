@@ -4,7 +4,7 @@ import {motion} from "framer-motion"
 const SplashScreen: React.FC= () => {
   
   return (
-    <motion.div className='w-screen h-screen flex bg-transparent absolute z-[100] justify-center'>
+    <motion.div className='w-screen h-screen flex bg-transparent absolute z-[100] justify-center overflow-hidden '>
         {/* screen left side slider */}
         <motion.div className='w-1/2 flex items-center justify-center bg-white' animate={{x: -1500}} transition={{ ease: "easeOut", duration: 1, delay: 1 }}>
           
