@@ -11,11 +11,12 @@ const SplashScreen: React.FC= () => {
         </motion.div>
 
         {/*vertical  line */}
-        <motion.div className=" absolute bg-black h-screen w-[1px]" animate={{opacity: 0}} transition={{ ease: "easeOut", duration: 1}}/>
+        <motion.div className=" absolute bg-black h-screen w-[1px]" animate={{opacity: 0}} transition={{ ease: "easeOut", duration: 1}}>
+        </motion.div>
 
         {/* the grow covers */}
-        <motion.div className="w-[1px] h-1/2 bg-white absolute" animate={{y: [0,-200,-600]}} transition={{ ease: "easeOut", duration: 1 }}/>
-        <motion.div className="w-[1px] h-1/2 bg-white absolute bottom-0" animate={{y: [0,200,600]}} transition={{ ease: "easeOut", duration: 1 }}/>
+        <motion.div className="w-[1px] h-1/2 bg-white absolute" animate={{y: [0,-200,-600]}} transition={{ ease: "easeOut", duration: 1 }}></motion.div>b
+        <motion.div className="w-[1px] h-1/2 bg-white absolute bottom-0" animate={{y: [0,200,600]}} transition={{ ease: "easeOut", duration: 1 }}></motion.div>b
 
 
         {/* screen right side slider */}
