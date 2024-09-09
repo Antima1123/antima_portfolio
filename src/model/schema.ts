@@ -16,7 +16,9 @@ const contactDetail: Schema<contactEmail>= new Schema({
     },
     email:{
         type: String,
-        require: [true, "Email is required"]
+        require: [true, "Email is required"],
+        unique: true,
+        match: [/.+\@.+\..+/, "enter a valid email"]
     },
     phone:{
         type: String,

@@ -1,21 +1,38 @@
-import Image from "next/image";
+"use client";
+
 import FirstPage from "./components/FirstPage";
 import SecondPage from "./components/SecondPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ThirdPage from "./components/ThirdPage";
 import Contact from "./components/Contact";
+import { useState } from "react";
+import SplashScreen from "./components/splashScreen";
 
-export default function Home() {
+const Home: React.FC = () => {
+  const [showSplash, setShowSplash] = useState(true);
+
+
+  // after 3 sec other components will be visible and splashscreen hide
+  setTimeout(()=> {
+    setShowSplash(false)
+  }, 2000) 
+
   return (
-    <div className="text-white font-sans">
-      <Header/>
-      <FirstPage/>
-      <SecondPage/>
-      <ThirdPage/>
-      <Contact/>
-      <Footer/>
+    <div className="relative">
+      {showSplash && <SplashScreen/>}
+
+        <Header />
+        <FirstPage />
+
+      <div className={`${showSplash ? "hidden" : "block"}`}>
+        <SecondPage />
+        <ThirdPage />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
-}
+};
 
+export default Home;

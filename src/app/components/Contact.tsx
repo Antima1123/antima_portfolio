@@ -5,8 +5,12 @@ import { TbMailFilled } from "react-icons/tb";
 import { FaPhone } from "react-icons/fa6";
 import { useState } from "react";
 import axios from "axios";
+import { Toaster, toast } from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 const Contact = () =>{
+
+    const router = useRouter();
     const[contact,setContact] = useState(
         {
             name: "",
@@ -18,13 +22,29 @@ const Contact = () =>{
     )
     const onSubmit = async()=>{
         try {
-            // await axios.post()
+            const req = await axios.post("/api/contact", contact)
+            const response = await req.data.data;
+            
+            if(response === 'sent'){
+                toast.success("Query sent successfully")
+                setTimeout(()=> {
+                    router.push('/');
+                }, 2000)
+            }
+            if(response === "invalid"){
+                toast.error("Please check your input values")
+            }
+
         } catch (error) {
             console.log("error in contact frontend")
         }
     }
     return(
         <div className="md:px-[6%] lg:px-[14%] w-full bg-[#2b2d33] text-white pt-40 gap-24 flex flex-col">
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+            />
             <div className="w-full items-center flex flex-col gap-2"> 
                 <div className="text-[20px] text-[#f75023] font-[600]">Contact Me</div>
                 <div className="text-[36px] font-[600]">I Want To Hear From You</div>
