@@ -32,7 +32,7 @@ const Home: React.FC = () => {
         <Service/>
         <Contact />
         <Footer />
-      </div>
+        </div>
     </div>
   );
 };
