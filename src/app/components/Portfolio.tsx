@@ -38,7 +38,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className="lg:w-1/2 flex justify-start lg:justify-end">
-                        <Image src="/port.jpg " alt="image" height={400} width={400} className="object-contain lg:w-[80%] w-[40%]"/>
+                        <img src="/port.jpg " alt="image" height={400} width={400} className="object-contain lg:w-[80%] w-[40%]"/>
                     </div>
             </div>
 
