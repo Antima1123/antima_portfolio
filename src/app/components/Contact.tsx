@@ -40,7 +40,7 @@ const Contact = () =>{
         }
     }
     return(
-        <div className="md:px-[6%] lg:px-[14%] w-full bg-[#2b2d33] text-white pt-40 gap-24 flex flex-col">
+        <div className="px-[6%] lg:px-[14%] w-full h-[85rem] bg-[#2b2d33] text-white pt-40 gap-24 flex flex-col">
             <Toaster
                 position="top-center"
                 reverseOrder={false}
@@ -51,8 +51,8 @@ const Contact = () =>{
                 <div className="w-[50%] text-[#b9b5c9] text-center text-[16px] ">Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</div>
             </div>
 
-            <div className=" justify-between flex ">
-                <div className="gap-4 w-1/2 flex flex-col">
+            <div className=" justify-between flex lg:flex-row flex-col lg:gap-0 gap-16">
+                <div className="gap-4 lg:w-1/2 w-full flex flex-col">
 
                     <div className="flex items-center gap-8">
                         <div className="w-[5rem] h-[5rem] bg-[#FFE2D8] rounded-full items-center justify-center flex">
@@ -60,7 +60,7 @@ const Contact = () =>{
                         </div>
                         <div>
                             <p className="text-[30px] font-[600]">Address</p>
-                            <p className="text-[16px] text-[#b9b5c9]">20, Somewhere in world</p>
+                            <p className="text-[16px] text-[#b9b5c9]">Kanpur, Uttar Pradesh India</p>
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@ const Contact = () =>{
                         </div>
                         <div>
                             <p className="text-[30px] font-[600]">Email</p>
-                            <p className="text-[16px] text-[#b9b5c9]">hello@dizme.com</p>
+                            <p className="text-[16px] text-[#b9b5c9]">antima1574@gmail.com</p>
                         </div>
                     </div>
 
@@ -80,14 +80,14 @@ const Contact = () =>{
                         </div>
                         <div>
                             <p className="text-[30px] font-[600]">Phone</p>
-                            <p className="text-[16px] text-[#b9b5c9]">+123 456 7890</p>
+                            <p className="text-[16px] text-[#b9b5c9]">+9453151574</p>
                         </div>
                     </div>
                 </div>
 
-                <div className=" w-1/2 gap-4 flex flex-col">
-                   <div className="flex gap-2 justify-between w-full">
-                        <div className="w-[50%] justify-center flex">
+                <div className="lg:w-1/2 w-full gap-4 flex flex-col">
+                   <div className="flex lg:flex-row flex-col  gap-2 justify-between w-full">
+                        <div className="lg:w-[50%] justify-center flex">
                             <input
                             placeholder="Your Name"
                             type="text"
@@ -97,7 +97,7 @@ const Contact = () =>{
                             className="border border-opacity-30 border-[#b9b5c9] rounded-2xl px-6 bg-transparent py-4 outline-none w-full placeholder-[#b9b5c9] "
                             />
                         </div>
-                        <div className="w-[50%]">
+                        <div className="lg:w-[50%]">
                             <input
                             placeholder="Email"
                             type="email"
@@ -109,8 +109,8 @@ const Contact = () =>{
                         </div>
                    </div>
 
-                   <div className="flex gap-2 justify-between w-full">
-                        <div className="w-[50%]">
+                   <div className="flex lg:flex-row flex-col gap-2 justify-between w-full">
+                        <div className="lg:w-[50%]">
                             <input
                             placeholder="Your Phone"
                             type="text"
@@ -120,7 +120,7 @@ const Contact = () =>{
                             className="border border-[#b9b5c9] rounded-2xl px-6 border-opacity-30 bg-transparent py-4 outline-none w-full placeholder-[#b9b5c9]"
                             />
                         </div>
-                        <div className="w-[50%]">
+                        <div className="lg:w-[50%]">
                             <input
                             placeholder="Subject"
                             type="text"
@@ -132,7 +132,7 @@ const Contact = () =>{
                         </div>
                    </div>
 
-                   <div className="w-full flex-1 flex h-48">
+                   <div className=" w-full flex-1 flex h-48">
                             <textarea
                             placeholder="Write your message here"
                             required

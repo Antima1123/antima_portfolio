@@ -5,6 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { ZodError } from "zod";
 import emailSchema from "@/schema/emailschema"
 import { log } from "node:console";
+import mailContact from "@/app/helpers/mailContact";
 
 dbConnect()
 
@@ -29,8 +30,8 @@ export async function POST(request: NextRequest){
         })
 
         await newData.save()
-        // number and email me validation lagani hai haa
 
+        await mailContact(email, name);
 
         return NextResponse.json({
             message: "succefully submited your request",
