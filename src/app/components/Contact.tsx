@@ -40,7 +40,7 @@ const Contact = () =>{
         }
     }
     return(
-        <div className="px-[6%] lg:px-[14%] w-full h-[85rem] bg-[#2b2d33] text-white pt-40 gap-24 flex flex-col">
+        <div className="px-[6%] lg:px-[14%] w-full lg:h-[55rem] h-[85rem] bg-[#2b2d33] text-white pt-32 gap-24 flex flex-col">
             <Toaster
                 position="top-center"
                 reverseOrder={false}

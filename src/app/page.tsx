@@ -4,10 +4,11 @@ import FirstPage from "./components/FirstPage";
 import SecondPage from "./components/SecondPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ThirdPage from "./components/ThirdPage";
 import Contact from "./components/Contact";
 import { useState } from "react";
 import SplashScreen from "./components/splashScreen";
+import Service from "./components/Service";
+import Portfolio from "./components/Portfolio";
 
 const Home: React.FC = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -25,9 +26,10 @@ const Home: React.FC = () => {
         <Header />
         <FirstPage />
 
-      <div className={`${showSplash ? "hidden" : "block"}`}>
+      <div className={`${showSplash ? "hidden" : "block"}` }>
         <SecondPage />
-        <ThirdPage />
+        <Portfolio/>
+        <Service/>
         <Contact />
         <Footer />
       </div>

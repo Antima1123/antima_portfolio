@@ -1,12 +1,22 @@
 "use client"
 import Image from "next/image"
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 const Header: React.FC =()=>{
-    const [clickbar,setClickbar] = useState(1)
+  
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [clickbar,setClickbar] = useState(1)
 
-    const [isScrolled, setIsScrolled] = useState(false);
+  // smooth scrolling 
+    const scrollToSection = (id: string) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
 
+    //sticky Header
   useEffect(() => {
     const handleScroll = () => {
       // Check if the page is scrolled down
@@ -37,28 +47,29 @@ const Header: React.FC =()=>{
                 <div className="flex h-full items-center md:gap-6 lg:gap-8 text-white text-[16px] font-sans font-[600]">
                     <button 
                     className={clickbar===1 ? "text-[#f75023]" : ""} 
-                    onClick={()=>{setClickbar(1)}}
+                    onClick={()=>{setClickbar(1); scrollToSection('home')}}
                     >
                     Home
                     </button>
 
                     <button 
                     className={clickbar===2 ? "text-[#f75023]" : ""} 
-                    onClick={()=>{setClickbar(2)}}
+                    onClick={()=>{setClickbar(2); scrollToSection('about')}}
                     >
                     About
                     </button>
 
+
                     <button 
                     className={clickbar===3 ? "text-[#f75023]" : ""} 
-                    onClick={()=>{setClickbar(3)}}
+                    onClick={()=>{setClickbar(3); scrollToSection('portfolio')}}
                     >
                     Portfolio
                     </button>
 
                     <button
                     className={clickbar===4 ? "text-[#f75023]" : ""}
-                    onClick={()=>{setClickbar(4)}}
+                    onClick={()=>{setClickbar(4),scrollToSection('service')}}
                     >
                     Service
                     </button>

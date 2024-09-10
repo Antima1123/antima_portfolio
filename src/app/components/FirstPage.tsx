@@ -5,13 +5,14 @@ import Image from "next/image"
 const FirstPage = () => {
     const as = `'` ;
     return (
-        <div 
-        className="-mt-[4rem] h-full"
-        style={{backgroundImage: `url('/bg-home.jpg')`,
-        backgroundSize: 'cover', // Adjust the background size
-        backgroundPosition: 'center', // Adjust the background position
-        height: '100vh', // Set the height for the background
-        }}>
+       <section id="home">
+             <div 
+            className="-mt-[4rem] h-full"
+            style={{backgroundImage: `url('/bg-home.jpg')`,
+            backgroundSize: 'cover', // Adjust the background size
+            backgroundPosition: 'center', // Adjust the background position
+            height: '100vh', // Set the height for the background
+            }}>
             <div className="w-full pt-[8rem] md:px-[6%] lg:px-[14%] lg:flex font-sans font-[600] text-white  items-center  justify-center  flex  flex-col md:flex-row">
 
             <Image src="/annu1.png" height={180} width={180} alt="boy" className="md:hidden flex"/>
@@ -47,6 +48,7 @@ const FirstPage = () => {
                 </div>
             </div>
         </div>
+       </section>
     )
 }
 

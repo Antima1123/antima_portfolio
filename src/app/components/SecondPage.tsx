@@ -4,7 +4,7 @@ import Card from "./Card"
 const SecondPage = () =>{
     const as = `'`;
     return(
-        <div className="bg-[#2b2d33]  flex flex-col px-[4%] lg:px-[14%] pt-40">
+        <div className="bg-[#2b2d33]  flex flex-col px-[4%] lg:px-[14%] pt-32">
             <div className="lg:flex lg:flex-row md:flex-col  justify-between">
                 <Card 
                     img= "/target.png"
@@ -26,6 +26,7 @@ const SecondPage = () =>{
                 />
             </div>
 
+            <section id="about">
             <div className="lg:flex lg:flex-row flex-col w-full justify-center lg:justify-between items-center pt-40 gap-24">
                 <div className="lg:w-1/2 w-full lg:justify-start flex justify-center ">
                     <Image src='/2page.jpg' height={450} width={450} alt="pageimg" className="lg:w-[500px] w-[300px] object-contain"/>
@@ -37,9 +38,10 @@ const SecondPage = () =>{
                         <div className="text-[36px] text-white ">I Can Design Anything You Want</div>
                    </div>
                     <div className="text-[#b9b5c9] text-[16px] w-full lg:w-[90%]">Hello there! I{as}m a web designer, and I{as}m very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</div>
-                    <button className="w-[8rem]  mt-2 rounded-3xl p-3 bg-[#f75023] hover:bg-transparent border-2 border-red-500 transition-all duration-500">Hire me</button>
+                    <button className="w-[8rem]  mt-2 rounded-3xl p-3 bg-[#f75023] hover:bg-transparent border-2 text-white border-red-500 transition-all duration-500">Hire me</button>
                 </div>
             </div>
+            </section>
         </div>
     )
 }
