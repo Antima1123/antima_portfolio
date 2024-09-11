@@ -34,8 +34,8 @@ const Service = () =>{
     return(
         <section id="service">
             <div className="lg:flex-row flex-col grid grid-cols-2  gap-6 h-[50rem] pt-32 px-[6%] lg:px-[14%] bg-[#2b2d33] text-white">
-                {Service.map((link)=>(
-                    <ServCard title={link.title} price={link.price} des={link.des} icon={link.icon} img={link.img}/>
+                {Service.map((link,index)=>(
+                    <ServCard key={index} title={link.title} price={link.price} des={link.des} icon={link.icon} img={link.img}/>
                 ))}
             </div>
         </section>
