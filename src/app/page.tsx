@@ -9,6 +9,7 @@ import { useState } from "react";
 import SplashScreen from "./components/splashScreen";
 import Service from "./components/Service";
 import Portfolio from "./components/Portfolio";
+import ServiceCard from "./components/Service_big_card";
 
 const Home: React.FC = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -31,6 +32,7 @@ const Home: React.FC = () => {
         <Portfolio/>
         <Service/>
         <Contact />
+        <ServiceCard/>
         <Footer />
         </div>
     </div>

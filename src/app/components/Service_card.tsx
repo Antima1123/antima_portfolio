@@ -17,7 +17,7 @@ interface Service{
 }
 const ServCard: React.FC<Service> = ({title, price,des, icon, img}) =>{
     return(
-        <div className="bg-[#3f4453] lg:w-[33rem] w-full font-sans h-[23rem] rounded-2xl p-16 flex ">
+        <div className="bg-[#4b4f5c] lg:w-[33rem] w-full font-sans h-[23rem] rounded-2xl p-16 flex ">
            <div className="w-full h-full flex justify-between">
                 <div className="w-32 h-32 justify-center flex rounded-full items-center relative">
                     <Image src={img} alt="" height={100} width={100}/>
