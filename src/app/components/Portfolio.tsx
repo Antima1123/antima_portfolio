@@ -4,10 +4,10 @@ import Skill from "./Skill_level"
 const Portfolio = () => {
 
     const skills = [
-        { name: 'JavaScript', level: 90, color: '#f75023' },
-        { name: 'TypeScript', level: 85, color: '#1cbe59' },
-        { name: 'React', level: 93, color: '#8067f0' },
-        { name: 'Next.js', level: 80, color: '#1cbe59' },
+        { name: 'Next.js', level: 95, color: '#f75023' },
+        { name: 'Tailwind', level: 93, color: '#1cbe59' },
+        { name: 'TypeScript', level: 90, color: '#8067f0' },
+        { name: 'Backend', level: 89, color: '#1cbe59' },
         // Add more skills as needed
       ];
 
@@ -24,11 +24,11 @@ const Portfolio = () => {
             <div className=" flex lg:flex-row flex-col items-center w-full justify-between gap-8 lg:gap-0 ">
                     <div className="lg:w-1/2 items-start flex flex-col  gap-16"> 
                         <div className=" w-[80%] ">
-                            <p className="text-[20px] text-[#f75023] font-[600]">Design is Life</p>
+                            <p className="text-[20px] text-[#f75023] font-[600]">Develop is Life</p>
                             <p className="text-[36px] font-[600]">I Develop Skills Regularly to Keep Me Update</p>
-                            <p className=" text-[#b9b5c9] text-[16px] ">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                            <p className=" text-[#b9b5c9] text-[16px] pt-2">Constantly learning and evolving, I stay ahead of the curve by regularly updating my skills to deliver the latest in full-stack development with Next.js.</p>
                         </div>
-                            <section className="py-6 flex flex-col w-full justify-start">
+                            <section className=" flex flex-col w-full justify-start">
                                 <div className="gap-10 flex flex-col w-[28rem]">
                                     {skills.map((skill, index) => (
                                     <Skill key={index} name={skill.name} level={skill.level} color={skill.color} />

@@ -39,10 +39,10 @@ const Header: React.FC =()=>{
   }, []);
 
     return (
-        <div className="sticky top-0 z-50 flex w-full">
+        <div className={`sticky top-0 z-50 flex w-full shadow-md ${isScrolled ? 'shadow-[#32353c]': ''}   `}>
             <div className={`${isScrolled ? 'bg-[#2b2d33]':'bg-transparent'} transition-all duration-500 ease-in-out  hidden md:flex items-center w-full h-[4rem] justify-between md:px-[6%] lg:px-[14%]`}>
-                <div className="h-full w-full items-center flex">
-                    <Image src="/logo.png" height={100} width={100} alt="logo"/>
+                <div className="h-full w-full items-center flex text-white font-sans font-[700] text-[24px]">
+                    <Link href={"https://craftronix.vercel.app/"}>Craftronix</Link>
                 </div>
 
                 <div className="flex h-full items-center md:gap-6 lg:gap-8 text-white text-[16px] font-sans font-[600]">

@@ -4,9 +4,10 @@ import Image from "next/image";
 import { FaReact } from "react-icons/fa";
 import { BiSolidUserDetail } from "react-icons/bi";
 import { AiFillProduct } from "react-icons/ai";
-import { CgWebsite } from "react-icons/cg";
+import { CgClose, CgWebsite } from "react-icons/cg";
 import { useState, useEffect } from "react";
 import ServiceCard from "./Service_big_card";
+import { IoIosClose } from "react-icons/io";
 
 interface Service {
   title: string;
@@ -72,19 +73,19 @@ const ServCard = ({ title, price, des, icon, img }: Service) => {
       </div>
       {showCard && (
         <div
-          className="fixed inset-0 z-[200] flex items-center justify-center bg-black bg-opacity-50 h-full" >
+          className="fixed inset-0 z-[200] flex items-center justify-center bg-black bg-opacity-80 h-full" >
           
           <div
             className="relative w-screen h-[calc(100vh-200px)] flex justify-center items-center"
             onClick={(e) => e.stopPropagation()}>
 
             <ServiceCard/>
-            <div className=" h-full flex items-start -pt-4">
+            <div className=" h-full ml-4 -mt-[2rem] flex items-start justify-center">
                 <button
-                className=" top-0 text-2xl font-bold text-white z-[200] cursor-pointer"
+                className=" z-[200] transition-all ease-in-out duration-500 flex items-center justify-center w-10 h-10 rounded-xl hover:rounded-3xl border-2 border-white text-2xl font-bold text-white cursor-pointer"
                 onClick={closeCard}
                 >
-                ×
+                <IoIosClose size={28}/>
                 </button>
             </div>
           </div>

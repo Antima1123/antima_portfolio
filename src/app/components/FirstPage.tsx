@@ -30,11 +30,11 @@ const FirstPage = () => {
                     </div>
                     <div className="lg:text-[20px] text-[18px] items-center gap-2 flex  text-white">
                         <p >A</p>
-                        <p className="text-[#1cbe59]">Creative Web Developer</p>
+                        <p className="text-[#1cbe59]">Full Stack Web Developer</p>
                         <p>From</p>
                         <p className="text-[#8067f0]">India</p>
                     </div>
-                    <div className="text-[16px] w-[70%] sm:w-[46%] md:w-full ">I{as}m creative web developer using nextjs, and I{as}m very passionate and dedicated to my work.</div>
+                    <div className="text-[16px] w-[70%] sm:w-[46%] md:w-full ">I{as}m creative full stack web developer using nextjs, and I{as}m very passionate and dedicated to my work.</div>
                     <div className="flex pt-2 gap-5 w-full md:justify-start  justify-center items-center">
                         <button className="w-[9rem]  rounded-3xl p-3 bg-[#f75023] hover:bg-transparent border-2 border-red-500 transition-all duration-500">About Me</button>
                         <div>Social links</div>
