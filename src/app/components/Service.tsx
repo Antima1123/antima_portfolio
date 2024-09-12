@@ -1,4 +1,7 @@
+"use client"
+import { useState } from "react";
 import ServCard from "./Service_card";
+import ServiceCard from "./Service_big_card";
 
 const Service = () =>{
     const Service =[
@@ -31,13 +34,21 @@ const Service = () =>{
             img: "/serv4.png"
         }
     ]
+    const [click,setClick] = useState(false);
+    // idea ye hai ki absolute kar denge  and scrollback to top page
+    const clicked =() =>{
+        setClick(true)
+    }
     return(
         <section id="service">
-            <div className="lg:flex-row flex-col grid grid-cols-2  gap-6 h-[50rem] pt-32 px-[6%] lg:px-[14%] bg-[#2b2d33] text-white">
+            <button 
+            className="lg:flex-row flex-col grid grid-cols-2  gap-6 h-[50rem] pt-32 px-[6%] lg:px-[14%] bg-[#2b2d33] text-white"
+            onClick={clicked}
+            >
                 {Service.map((link,index)=>(
                     <ServCard key={index} title={link.title} price={link.price} des={link.des} icon={link.icon} img={link.img}/>
                 ))}
-            </div>
+            </button>
         </section>
     )
 }

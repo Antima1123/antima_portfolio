@@ -14,6 +14,8 @@ import ServiceCard from "./components/Service_big_card";
 const Home: React.FC = () => {
   const [showSplash, setShowSplash] = useState(true);
 
+  const showCard = ServiceCard();
+
 
   // after 3 sec other components will be visible and splashscreen hide
   setTimeout(()=> {
@@ -27,12 +29,12 @@ const Home: React.FC = () => {
         <Header />
         <FirstPage />
 
+        
       <div className={`${showSplash ? "hidden" : "block"}` }>
         <SecondPage />
         <Portfolio/>
         <Service/>
         <Contact />
-        <ServiceCard/>
         <Footer />
         </div>
     </div>

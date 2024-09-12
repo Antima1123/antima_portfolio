@@ -2,8 +2,8 @@ import Image from "next/image"
 
 const ServiceCard =()=>{
     return (
-        <div className="bg-gray-200 h-screen font-sans text-white justify-center items-center flex flex-col  ">
-            <div className=" h-[40rem] w-[55rem] bg-[#34353a] p-16 overflow-y-scroll">
+        <div className="bg-gray-200 font-sans text-white  flex  ">
+            <div className=" h-[40rem] w-[55rem] bg-[#34353a] p-16 overflow-y-scroll flex flex-col">
                 <div className="w-full flex">
                     <Image src="/service.jpg" alt="image" height={1000} width={500} className=" object-cover content-center w-full h-80"/>
                 </div>
@@ -21,5 +21,3 @@ const ServiceCard =()=>{
     )
 }
 export default ServiceCard
-
-// ’ ye different hai ' isse

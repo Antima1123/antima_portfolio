@@ -16,6 +16,7 @@ const Header: React.FC =()=>{
       }
     };
 
+
     //sticky Header
   useEffect(() => {
     const handleScroll = () => {
@@ -69,7 +70,7 @@ const Header: React.FC =()=>{
 
                     <button
                     className={clickbar===4 ? "text-[#f75023]" : ""}
-                    onClick={()=>{setClickbar(4),scrollToSection('service')}}
+                    onClick={()=>{setClickbar(4); scrollToSection('service')}}
                     >
                     Service
                     </button>
@@ -87,8 +88,10 @@ const Header: React.FC =()=>{
                     >
                     Contact
                     </button>
-                    
-                    <button className="lg:w-[9rem] md:w-[7rem] lg:text-[16px] md:text-[14px] items-center justify-center p-2 flex flex-1 rounded-3xl border-2 border-[#f75023] hover:bg-[#f75023] transition-all duration-500">Download CV</button>
+
+                  <Link href={"cv.pdf"}>
+                  <button className="lg:w-[9rem] md:w-[7rem] lg:text-[16px] md:text-[14px] items-center justify-center p-2 flex flex-1 rounded-3xl border-2 border-[#f75023] hover:bg-[#f75023] transition-all duration-500">Download CV</button>
+                  </Link>                    
                 </div>
             </div>
             <div>
