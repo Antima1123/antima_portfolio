@@ -42,7 +42,7 @@ const Service = () =>{
     return(
         <section id="service">
             <button 
-            className="lg:flex-row flex-col grid grid-cols-2  gap-6 h-[50rem] pt-32 px-[6%] lg:px-[14%] bg-[#2b2d33] text-white"
+            className="lg:flex-row flex-col grid grid-cols-2 w-full  gap-6 h-[50rem] pt-32 px-[6%] lg:px-[14%] bg-[#2b2d33] text-white"
             onClick={clicked}
             >
                 {Service.map((link,index)=>(
