@@ -40,6 +40,7 @@ const Contact = () =>{
         }
     }
     return(
+       <section id="contact">
         <div className="px-[6%] lg:px-[14%] w-full lg:h-[55rem] h-[85rem] bg-[#2b2d33] text-white pt-32 gap-24 flex flex-col">
             <Toaster
                 position="top-center"
@@ -148,7 +149,8 @@ const Contact = () =>{
 
                 </div>
             </div>
-    </div>
+        </div>
+       </section>
     )
 }
 export default Contact;

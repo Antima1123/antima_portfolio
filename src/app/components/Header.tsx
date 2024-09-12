@@ -84,7 +84,7 @@ const Header: React.FC =()=>{
 
                     <button 
                     className={clickbar===6 ? "text-[#f75023]" : ""}
-                    onClick={()=>{setClickbar(6)}}
+                    onClick={()=>{setClickbar(6); scrollToSection('contact')}}
                     >
                     Contact
                     </button>
