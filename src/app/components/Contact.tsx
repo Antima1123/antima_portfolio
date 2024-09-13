@@ -7,10 +7,12 @@ import { useState } from "react";
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const Contact = () =>{
 
     const router = useRouter();
+    const [isDisabled, setIsDisabled] = useState(false)
     const[contact,setContact] = useState(
         {
             name: "",
@@ -22,20 +24,24 @@ const Contact = () =>{
     )
     const onSubmit = async()=>{
         try {
+            setIsDisabled(true);
             const req = await axios.post("/api/contact", contact)
             const response = await req.data.data;
             
             if(response === 'sent'){
+                setIsDisabled(false);
                 toast.success("Query sent successfully")
                 setTimeout(()=> {
                     router.push('/');
                 }, 2000)
             }
             if(response === "invalid"){
+                setIsDisabled(false);
                 toast.error("Please check your input values")
             }
 
         } catch (error) {
+            setIsDisabled(false);
             console.log("error in contact frontend")
         }
     }
@@ -143,9 +149,12 @@ const Contact = () =>{
                             />
                      </div>
                      <button 
-                     className="w-[11rem]  font-[500] rounded-3xl p-3 bg-[#f75023] hover:bg-transparent border-2 border-red-500 transition-all duration-500"
+                     className={`w-[11rem] font-[500] rounded-3xl p-3 bg-[#f75023] ${isDisabled? " flex justify-center": "hover:bg-transparent border-2 border-red-500"} transition-all duration-500`}
                      onClick={onSubmit}
-                     >Submit Now</button>
+                     disabled={isDisabled}
+                     >
+                       {isDisabled? <AiOutlineLoading3Quarters size={22} className=" animate-spin"/> :  <p>Submit Now</p>}
+                    </button>
 
                 </div>
             </div>
