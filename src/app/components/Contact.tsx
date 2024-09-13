@@ -48,8 +48,8 @@ const Contact = () =>{
             />
             <div className="w-full items-center flex flex-col gap-2"> 
                 <div className="text-[20px] text-[#f75023] font-[600]">Contact Me</div>
-                <div className="text-[36px] font-[600]">I Want To Hear From You</div>
-                <div className="w-[50%] text-[#b9b5c9] text-center text-[16px] ">Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</div>
+                <div className="text-[36px] font-[600]">For Inquiries or Discussions</div>
+                <div className="w-[50%] text-[#b9b5c9] text-center text-[16px] "> please reach out via email or phone. I look forward to connecting with you.</div>
             </div>
 
             <div className=" justify-between flex lg:flex-row flex-col lg:gap-0 gap-16">
