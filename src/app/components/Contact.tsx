@@ -55,7 +55,7 @@ const Contact = () =>{
             <div className="w-full items-center flex flex-col gap-2"> 
                 <div className="text-[20px] text-[#f75023] font-[600]">Contact Me</div>
                 <div className="text-[36px] font-[600]">Say Hello!</div>
-                <div className="w-[50%] text-[#b9b5c9] text-center text-[16px] ">I&apos;m just a message away. Let&apos;s start a conversation!</div>
+                <div className="w-[80%] text-[#b9b5c9] text-center text-[16px] ">I&apos;m just a message away. Let&apos;s start a conversation!</div>
             </div>
 
             <div className=" justify-between flex lg:flex-row flex-col lg:gap-0 gap-16">

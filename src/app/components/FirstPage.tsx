@@ -1,6 +1,7 @@
 "use client"
-
 import Image from "next/image"
+import { FaGithub } from "react-icons/fa";
+
 
 const FirstPage = () => {
     const as = `'` ;
@@ -37,14 +38,18 @@ const FirstPage = () => {
                     <div className="text-[16px] w-[70%] sm:w-[46%] md:w-full ">I{as}m creative full stack web developer using nextjs, and I{as}m very passionate and dedicated to my work.</div>
                     <div className="flex pt-2 gap-5 w-full md:justify-start  justify-center items-center">
                         <button className="w-[9rem]  rounded-3xl p-3 bg-[#f75023] hover:bg-transparent border-2 border-red-500 transition-all duration-500">About Me</button>
-                        <div>Social links</div>
+                        <div className="flex ">
+                            <FaGithub/> 
+                        </div>
                     </div>
                 </div>
-                <div className=" pt-20 w-full items-center md:flex flex-col justify-center relative  hidden">
-                    <Image src="/annu1.png" height={320} width={320} alt="boy"/>
-                    <Image src="/next.jpg" height={50} width={50} alt="next" className=" absolute rounded-lg top-[7rem] left-[5rem] animate-floating" />
-                    <Image src="/tailwind.png" height={50} width={50} alt="tailwind" className=" absolute rounded-lg  top-[11rem] right-[6rem] animate-floating"/>
-                    <Image src="/mongo.jpg" height={50} width={50} alt="mongo" className=" absolute rounded-lg bottom-2 left-[13rem] animate-floating"/>
+                <div className=" pt-20 w-full items-center md:flex flex-col justify-center relative hidden">
+                     <Image src="/annu1.png" height={320} width={320} alt="boy"/>
+                    <div className=" absolute h-80 w-80  flex items-center justify-center">
+                        <Image src="/next.jpg" height={50} width={50} alt="next" className=" absolute rounded-lg top-4 -left-4 animate-floating" />
+                        <Image src="/tailwind.png" height={50} width={50} alt="tailwind" className=" absolute rounded-lg  top-28 -right-4 animate-floating"/>
+                        <Image src="/mongo.jpg" height={50} width={50} alt="mongo" className=" absolute rounded-lg -bottom-8 left- animate-floating"/>
+                    </div>
                 </div>
             </div>
         </div>

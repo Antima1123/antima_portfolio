@@ -43,7 +43,7 @@ const ServCard = ({ title, price, des, icon, img }: Service) => {
 
   return (
     <div
-      className="bg-[#4b4f5c] lg:w-[33rem] w-full font-sans h-[23rem] rounded-2xl p-16 flex cursor-pointer"
+      className="bg-[#4b4f5c] w-full font-sans h-[23rem] rounded-2xl p-16 flex cursor-pointer"
       onClick={handleCard}
     >
       <div className="w-full h-full flex justify-between">

@@ -18,17 +18,17 @@ const Portfolio = () => {
             <div className="w-full items-center flex flex-col gap-2">
                 <div className="text-[20px] text-[#f75023] font-[600]">Portfolio</div>
                 <div className="text-[36px] font-[600]">My Amazing Works</div>
-                <div className="w-[50%] text-[#b9b5c9] text-center text-[16px] ">I build user-friendly, responsive, and adaptive websites that provide seamless experiences across all devices.</div>
+                <div className="w-[80%] text-[#b9b5c9] text-center text-[16px] ">I build user-friendly, responsive, and adaptive websites that provide seamless experiences across all devices.</div>
             </div>
             
             <div className=" flex lg:flex-row flex-col items-center w-full justify-between gap-8 lg:gap-0 ">
-                    <div className="lg:w-1/2 items-start flex flex-col  gap-16"> 
+                    <div className="lg:w-1/2 items-center text-center lg:text-start lg:items-start flex flex-col  gap-16"> 
                         <div className=" w-[80%] ">
                             <p className="text-[20px] text-[#f75023] font-[600]">Develop is Life</p>
                             <p className="text-[36px] font-[600]">I Develop Skills Regularly to Keep Me Update</p>
                             <p className=" text-[#b9b5c9] text-[16px] pt-2">Constantly learning and evolving, I stay ahead of the curve by regularly updating my skills to deliver the latest in full-stack development with Next.js.</p>
                         </div>
-                            <section className=" flex flex-col w-full justify-start">
+                            <section className=" flex flex-col w-full items-center lg:justify-start">
                                 <div className="gap-10 flex flex-col w-[28rem]">
                                     {skills.map((skill, index) => (
                                     <Skill key={index} name={skill.name} level={skill.level} color={skill.color} />
