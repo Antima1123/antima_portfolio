@@ -39,7 +39,7 @@ const FirstPage = () => {
                     <div className="flex pt-2 gap-5 w-full md:justify-start  justify-center items-center">
                         <button className="w-[9rem]  rounded-3xl p-3 bg-[#f75023] hover:bg-transparent border-2 border-red-500 transition-all duration-500">About Me</button>
                         <div className="flex ">
-                            <FaGithub/> 
+                            {/* <FaGithub/>  */}
                         </div>
                     </div>
                 </div>
