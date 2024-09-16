@@ -44,7 +44,7 @@ const FirstPage = () => {
                     </div>
                 </div>
                 <div className=" pt-20 w-full items-center md:flex flex-col justify-center relative hidden">
-                     <Image src="/annu1.png" height={320} width={320} alt="boy"/>
+                     <Image src="/Antima-2.png" height={500} width={500} alt="boy" className=" w-[280px] rounded-lg"/>
                     <div className=" absolute h-80 w-80  flex items-center justify-center">
                         <Image src="/next.jpg" height={50} width={50} alt="next" className=" absolute rounded-lg top-4 -left-4 animate-floating" />
                         <Image src="/tailwind.png" height={50} width={50} alt="tailwind" className=" absolute rounded-lg  top-28 -right-4 animate-floating"/>
