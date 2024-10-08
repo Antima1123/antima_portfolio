@@ -11,7 +11,7 @@ const SplashScreen: React.FC= () => {
         </motion.div>
 
         {/*vertical  line */}
-        <motion.div className=" absolute bg-black h-screen w-[1px] z-[95]" animate={{opacity: 0}} transition={{ ease: "easeOut", duration: 1}}>
+        <motion.div className=" absolute bg-black h-screen w-[2px] z-[95]" animate={{opacity: 0}} transition={{ ease: "easeOut", duration: 1}}>
         </motion.div>
 
         {/* the grow covers */}

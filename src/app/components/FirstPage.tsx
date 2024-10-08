@@ -16,7 +16,7 @@ const FirstPage = () => {
             }}>
             <div className="w-full pt-[8rem] md:px-[6%] lg:px-[14%] lg:flex font-sans font-[600] text-white  items-center  justify-center  flex  flex-col md:flex-row">
 
-            <Image src="/annu1.png" height={180} width={180} alt="boy" className="md:hidden flex"/>
+            <Image src="/Antima-2.png" height={180} width={180} alt="=img" className="md:hidden flex"/>
 
                 
                 <div className="flex flex-col md:gap-4  gap-2 w-full pt-20  items-center md:items-start">
