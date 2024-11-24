@@ -12,9 +12,9 @@ import Portfolio from "./components/Portfolio";
 import ServiceCard from "./components/Service_big_card";
 
 const Home: React.FC = () => {
+  const showCard = ServiceCard();
   const [showSplash, setShowSplash] = useState(true);
 
-  const showCard = ServiceCard();
 
 
   // after 3 sec other components will be visible and splashscreen hide
