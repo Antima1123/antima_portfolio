@@ -16,7 +16,7 @@ const FirstPage = () => {
             }}>
             <div className="w-full pt-[8rem] md:px-[6%] lg:px-[14%] lg:flex font-sans font-[600] text-white  items-center  justify-center  flex  flex-col md:flex-row">
 
-            <Image src="/Antima-2.png" height={180} width={180} alt="=img" className="md:hidden flex"/>
+            <Image src="/linkedin.png" height={120} width={180} alt="=img" className="md:hidden w-[280px] h-[340px] object-cover object-top rounded-lg"/>
 
                 
                 <div className="flex flex-col md:gap-4  gap-2 w-full pt-20  items-center md:items-start">
@@ -44,7 +44,7 @@ const FirstPage = () => {
                     </div>
                 </div>
                 <div className=" pt-20 w-full items-center md:flex flex-col justify-center relative hidden">
-                     <Image src="/Antima-2.png" height={500} width={500} alt="boy" className=" w-[280px] rounded-lg"/>
+                     <Image src="/linkedin.png" height={500} width={500} alt="boy" className=" w-[280px] h-[340px] object-cover object-top rounded-lg"/>
                     <div className=" absolute h-80 w-80  flex items-center justify-center">
                         <Image src="/next.jpg" height={50} width={50} alt="next" className=" absolute rounded-lg top-4 -left-4 animate-floating" />
                         <Image src="/tailwind.png" height={50} width={50} alt="tailwind" className=" absolute rounded-lg  top-28 -right-4 animate-floating"/>
